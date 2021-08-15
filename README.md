@@ -6,6 +6,9 @@ Crawl cat photos using OpenAPI, an image search provided by Kakao.
 The cat is LOVE.
 
 
+
+----------------------------------------------------------------------------------
+
 수정사항 (추가예정)
 
 = 21.08.05 =
