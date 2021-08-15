@@ -8,8 +8,7 @@ def save_image(image_url, file_name, maximum):
     # 요청에 성공했다면
     if img_response.status_code == 200:
         # 파일 저장
-        for i in range(maximum):
-            with open(file_name, "wb") as fp:
+        with open(file_name, "wb") as fp:
                 fp.write(img_response.content)
 
 
@@ -31,8 +30,11 @@ response = requests.post(url, headers=headers, data=data)
 if response.status_code != 200:
     print("eror! because ", response.json())
 else:
-    count = 0
+    count = 1
     for image_info in response.json()['documents']:
+        if count == maximum + 1:
+            print("지정된 검색 결과 수를 초과하여 중단합니다.")
+            break
         print(f"[{count}th] image_url =", image_info['image_url'])
         # 저장될 이미지 파일명 설정
         count = count + 1
