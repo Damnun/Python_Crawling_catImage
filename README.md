@@ -24,3 +24,9 @@ The cat is LOVE.
 3. 결과 이미지의 maximum을 정할 수 있나? ○ (21.08.15)
 4. 이미지를 원하는 경로에 저장할 수 있나? ㅇ (21.08.17)
 5. 4번이 가능하다면, 원하는 경로에 폴더를 생성하고 그 안에 4번을 할 수 있나? ㅇ (21.08.17)
+
+4번과 5번이 해결되었습니다. (21.08.17)
+Number 4 and 5 have been resolved. (21.08.17)
+
+1번을 마지막으로, 해당 프로젝트의 마지막 코드를 제출 후 이 레퍼지토리는 마무리 하겠습니다.
+Lastly, I will finish this repository after submitting the last code of the project.
