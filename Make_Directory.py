@@ -36,11 +36,11 @@ response = requests.post(url, headers=headers, data=data)
 
 # 요청에 실패했다면
 if response.status_code != 200:
-    print("eror! because ", response.json())
+    print("error! because ", response.json())
 
 else:
     folder_name = search + "_" + str(maximum) + "_Images/"
-    os.mkdir(folder_name)  # mkdir(내용) , 내용의 이름을 가진 폴더를 생성
+    os.mkdir("/workspace/Tour_Of_Baekjoon/Python_Crawling_catImage/" + folder_name)  # mkdir(내용) , 내용의 이름을 가진 폴더를 생성
     count = 1
 
     for image_info in response.json()['documents']:
